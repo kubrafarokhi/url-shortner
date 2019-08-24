@@ -14,13 +14,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
-  gem 'capybara-selenium'
-  gem 'chromedriver-helper' if ENV['USE_SYSTEM_CHROMEDRIVER'].nil?
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
-  gem 'rspec-given'
-  gem 'shoulda-matchers'
-  gem 'simple_bdd'
 end
