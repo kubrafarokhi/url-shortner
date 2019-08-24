@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "stack": "heroku-18",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "ably:bootstrap"
+    },
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "options": {
+        "version": "10"
+      }
+    },
+  ],
+  "buildpacks": [
+    { "url": "heroku/nodejs" },
+    { "url": "heroku/ruby" }
+  ],
+}

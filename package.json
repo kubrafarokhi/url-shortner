@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.4.1"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'",
+    "lint": "./client/node_modules/.bin/eslint --ext .js,.jsx './client/src'"
+  }
+}

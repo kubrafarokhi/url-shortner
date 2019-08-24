@@ -1,0 +1,31 @@
+{
+  "extends": "airbnb",
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "webextensions": true
+  },
+  "plugins": [ "react-hooks" ],
+  "rules": {
+    semi: ["error", "never", { "beforeStatementContinuationChars": "never" }],
+    "import/no-unresolved": 0,
+    "no-return-assign": 0,
+    "react/no-render-return-value": 0,
+    "react/prop-types": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "import/extensions": ["error", "ignorePackages"],
+    "object-curly-newline": "off",
+    "no-param-reassign": "off",
+    "jsx-a11y/label-has-for": "off",
+    "class-methods-use-this": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "globals": {}
+}
