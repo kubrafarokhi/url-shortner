@@ -42,11 +42,11 @@
     "terser": "^3.17.0",
     "typescript": "^3.5.3",
     "url-loader": "^1.1.2",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
