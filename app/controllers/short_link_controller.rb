@@ -1,6 +1,7 @@
 class ShortLinkController < ApplicationController
   def show
     link = ShortLink.find_by(stub: params[:stub])
+    AccessEvent.create(short_link: link, referer: request.referer, user_agent: request.user_agent)
     redirect_to link.long_url, status: 301
   end
 
