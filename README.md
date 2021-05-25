@@ -1,11 +1,21 @@
 # Link Shortener
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Setup
 
 - `bundle install`
 - `cd client/ && npm install && cd ..`
 - `rails db:create && rails db:schema:load`
 - `rails start`
+
+### Postgres
+This application requires a postgres database for development. If you don't have pg installed
+but do have docker, you can create a sufficient postgres server with the command:
+
+```
+docker run -p 5432:5432 --name default-port-postgres -e POSTGRES_PASSWORD=badsecret -e POSTGRES_HOST_AUTH_METHOD=trust -d postgres
+```
 
 ## create a link
 ```
@@ -34,8 +44,8 @@ GET http://localhost:8080/a1B2c3D4
 which would return a 301 that redirects the user to the original URL.
 
 
-## Bonus Points
-If you have time, you could create an analytics view for a given short link that will show
+## Analytics
+There is an analytics view for a given short link that will show
 analytics about each time the short link has been accessed. The analytics view is
 signified by adding a + to the end of a given short link. For example
 
