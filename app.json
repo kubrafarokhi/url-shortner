@@ -2,7 +2,7 @@
   "name": "",
   "stack": "heroku-18",
   "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
+    "postdeploy": "rails db:create && rails db:schema:load"
   },
   "env": {
     "NPM_CONFIG_PRODUCTION": "false"
