@@ -21,10 +21,10 @@
       "options": {
         "version": "10"
       }
-    },
+    }
   ],
   "buildpacks": [
     { "url": "heroku/nodejs" },
     { "url": "heroku/ruby" }
-  ],
+  ]
 }
