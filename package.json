@@ -5,7 +5,8 @@
     "node": "14.17.0"
   },
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ..",
+    "install": "cd client && npm install && cd ..",
+    "build": "cd client && npm run build && cd ..",
     "deploy": "cp -a client/build/. public/",
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'",
     "lint": "./client/node_modules/.bin/eslint --ext .js,.jsx './client/src'"
