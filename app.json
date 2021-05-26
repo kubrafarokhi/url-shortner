@@ -5,6 +5,7 @@
     "postdeploy": "bundle exec rake bootstrap"
   },
   "env": {
+    "NPM_CONFIG_PRODUCTION": "false"
   },
   "formation": {
     "web": {
