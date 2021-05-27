@@ -2,7 +2,7 @@
   "name": "",
   "stack": "heroku-18",
   "scripts": {
-    "postdeploy": "rails db:schema:load"
+    "postdeploy": "rails db:migrate"
   },
   "env": {
     "NPM_CONFIG_PRODUCTION": "false"
