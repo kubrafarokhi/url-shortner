@@ -17,6 +17,9 @@ but do have docker, you can create a sufficient postgres server with the command
 docker run -p 5432:5432 --name default-port-postgres -e POSTGRES_PASSWORD=badsecret -e POSTGRES_HOST_AUTH_METHOD=trust -d postgres
 ```
 
+## Users
+Users are unauthenticated, and there is no difference between an admin and normal user. This is for simplicity of this exercise.
+
 ## create a link
 ```
 POST /short_link CONTENT-TYPE application/json
